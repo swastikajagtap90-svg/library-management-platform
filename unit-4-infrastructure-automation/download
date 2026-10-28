@@ -1,0 +1,39 @@
+# Credentials and local AWS configuration
+.aws/
+.env
+.env.*
+
+# SSH private keys
+*.pem
+id_rsa
+id_ed25519
+library-aws-key
+
+# Terraform local state and working directory
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+!*.tfvars.example
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Python and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor and OS files
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip
