@@ -1,0 +1,21 @@
+name: Documentation check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify key documentation files exist
+        run: |
+          test -f README.md
+          test -f docs/design-thinking.md
+          test -f docs/requirements.md
+          test -f docs/architecture-and-roadmap.md
+          echo "Required documentation files are present."
