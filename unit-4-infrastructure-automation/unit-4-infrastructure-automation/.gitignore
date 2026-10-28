@@ -1,0 +1,31 @@
+# AWS credentials
+.aws/
+.env
+.env.*
+
+# SSH private keys
+*.pem
+id_rsa
+id_ed25519
+library-aws-key
+
+# Terraform generated files
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+
+# Python files
+__pycache__/
+.venv/
+venv/
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ZIP archives
+*.zip
